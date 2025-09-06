@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiplayer Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="neon-text">⚡ Rock • Paper • Scissors ⚡</h1>
+
+    <div class="players">
+      <div class="player">
+        <h2 class="shine">Player 1</h2>
+        <div class="choices">
+          <button class="choice" onclick="choose('rock', 1)">✊</button>
+          <button class="choice" onclick="choose('paper', 1)">✋</button>
+          <button class="choice" onclick="choose('scissors', 1)">✌️</button>
+        </div>
+        <p id="p1Choice" class="shine">Choice: 🔒</p>
+      </div>
+
+      <div class="player">
+        <h2 class="shine">Player 2</h2>
+        <div class="choices">
+          <button class="choice" onclick="choose('rock', 2)">✊</button>
+          <button class="choice" onclick="choose('paper', 2)">✋</button>
+          <button class="choice" onclick="choose('scissors', 2)">✌️</button>
+        </div>
+        <p id="p2Choice" class="shine">Choice: ❓</p>
+      </div>
+    </div>
+
+    <div class="results">
+      <p id="winner" class="neon-text">Waiting for Player 1...</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
